@@ -14,11 +14,11 @@ public class PrimeFactorTest {
 		assertEquals(list(), primeFactor.generate(1));
 	}
 	
-//	@Test
-//	public void testTwo() throws Exception {
-//		PrimeFactor primeFactor = new PrimeFactor();
-//		assertEquals(list(2), primeFactor.generate(2));
-//	}
+	@Test
+	public void testTwo() throws Exception {
+		PrimeFactor primeFactor = new PrimeFactor();
+		assertEquals(list(2), primeFactor.generate(2));
+	}
 	
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
