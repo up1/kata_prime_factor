@@ -8,7 +8,7 @@ public class PrimeFactor {
 	public List<Integer> generate(int i) {
 		List<Integer> primes = new ArrayList<Integer>();
 		if(i>1) {
-			primes.add(2);
+			primes.add(i);
 		}
 		return primes;
 	}
