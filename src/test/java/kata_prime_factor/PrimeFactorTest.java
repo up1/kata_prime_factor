@@ -1,6 +1,6 @@
 package kata_prime_factor;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +26,15 @@ public class PrimeFactorTest {
 	public void testTwo() throws Exception {
 		assertEquals(list(2), primeFactor.generate(2));
 	}
-	
+
 	@Test
 	public void testTree() throws Exception {
 		assertEquals(list(3), primeFactor.generate(3));
+	}
+
+	@Test
+	public void testFour() throws Exception {
+		assertEquals(list(2, 2), primeFactor.generate(4));
 	}
 
 	private List<Integer> list(int... integers) {
