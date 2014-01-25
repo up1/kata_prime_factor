@@ -36,6 +36,11 @@ public class PrimeFactorTest {
 	public void testFour() throws Exception {
 		assertEquals(list(2, 2), primeFactor.generate(4));
 	}
+	
+	@Test
+	public void testFive() throws Exception {
+		assertEquals(list(5), primeFactor.generate(5));
+	}
 
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
