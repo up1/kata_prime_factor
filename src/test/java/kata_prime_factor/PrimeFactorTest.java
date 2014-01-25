@@ -10,7 +10,7 @@ public class PrimeFactorTest {
 	@Test
 	public void testOne() throws Exception {
 		PrimeFactor primeFactor = new PrimeFactor();
-		assertEquals(list{}, primeFactor.generate(1));
+		assertEquals(list(), primeFactor.generate(1));
 	}
 	
 	private List<Integer> list() {
