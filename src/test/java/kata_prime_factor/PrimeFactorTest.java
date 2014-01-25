@@ -56,6 +56,8 @@ public class PrimeFactorTest {
 	public void testEight() throws Exception {
 		assertEquals(list(2, 2, 2), primeFactor.generate(8));
 	}
+	
+	
 
 	private List<Integer> list(int... integers) {
 		List<Integer> list = new ArrayList<Integer>();
