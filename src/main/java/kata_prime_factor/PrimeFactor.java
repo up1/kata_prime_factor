@@ -7,14 +7,9 @@ public class PrimeFactor {
 
 	public List<Integer> generate(int integer) {
 		List<Integer> primes = new ArrayList<Integer>();
-		int candidate = 2;
-		while (integer > 1) {
-			while (integer % candidate == 0) {
+		for (int candidate = 2; integer > 1; candidate++)
+			for (; integer % candidate == 0; integer = integer / candidate)
 				primes.add(candidate);
-				integer = integer / candidate;
-			}
-			candidate++;
-		}
 		return primes;
 	}
 
